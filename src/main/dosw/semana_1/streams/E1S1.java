@@ -4,7 +4,7 @@
  * 1000091727
  * DOSW
  */
-package main.dosw.semana_1;
+package main.dosw.semana_1.streams;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
