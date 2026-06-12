@@ -1,4 +1,4 @@
-#SEMANA No 1 - DOSW Manejo de Streams 
+# SEMANA No 1 - DOSW Manejo de Streams 
 
 ## Datos Personales: 
 - William Santiago Ruiz Medina
