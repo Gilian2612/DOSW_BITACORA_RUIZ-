@@ -1,7 +1,6 @@
 package main.dosw.semana_2.pokemon;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 /** SEMANA 2 - DOSW Manejo de sistemas 
  * William Santiago Ruiz M
  * 1000091727

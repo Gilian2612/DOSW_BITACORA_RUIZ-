@@ -92,25 +92,48 @@ aparezca una sola vez.
 
 **Codigo:**
 
+![alt text](CODIGOE6S2.png)
+
 
 **Captura de ejecución**
 
+![alt text](OUTPUTE6S2.png)
 
 **Explicación**
+Se tiene lista de pokemones con alñgunos repetidos, usamos  
+.distinct() para eliminar estos duplicados, y luego un .collect() para ponerlos en la lista final 
 
 
 ### E7S2 - Orden del Profesor Oak
 El Profesor Oak quiere su Pokédex organizada. Ordenar alfabéticamente los nombres de los Pokémon. 
 
 **Codigo:**
+
+![alt text](CODIGOE7S2.png)
+
+
 **Captura de ejecución**
+
+![alt text](OUTPUTE7S2.png)
+
+
 **Explicación**
+Iniciamos con la lista desordenada, hacemos un .sorted() para ordenarla, y los metemos en la lista final con .collect()
 
 ### E8S2 - Evoluciones Preparadas
-
+Dada una lista de Pokémon que incluye si pueden evolucionar (boolean puedeEvolucionar), obtener 
+únicamente los que estén listos para evolucionar.
 
 **Codigo:**
+
+![alt text](CODIGOE8S2.png)
+
+
 **Captura de ejecución**
+
+![alt text](OUTPUTE8S2.png)
+
+
 **Explicación**
 
 ### A PARTIR DE ESTE PUNTO SE DEBE CREAR LA CLASE POKEMON 
