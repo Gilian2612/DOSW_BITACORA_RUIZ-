@@ -69,6 +69,12 @@ sus nombres.
 Se tiene lista de users, filtramos los que tengan más de 18 años (o 18 años), se toman los nombres de las personas que cumplan con la condicion, y posteriormente se usa .collect() para meter a todos esos en una lista con sus nombres 
 
 ### E5S1 Transacciones Bancarias
+Dada una lista de transacciones bancarias representadas por objetos:
+class Transaction { String id; double amount; boolean approved; }
+- Se requiere procesar la lista usando Streams para:
+    - Usar peek para ver cada transacción procesada (Utilizar System.out.println para ver la transacción)
+    - Verificar si existe al menos una transacción no aprobada
+    - Retornar true o false indicando si el lote de transacciones es válido.
 
 
 
