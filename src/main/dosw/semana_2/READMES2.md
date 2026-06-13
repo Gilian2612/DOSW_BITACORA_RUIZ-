@@ -167,9 +167,14 @@ Generar una lista que contenga únicamente los nombres de todos los Pokémon del
 
 **Codigo:**
 
+![alt text](CODIGOE10S2.png)
+
 **Captura de ejecución**
 
+![alt text](OUTPUTE10S2.png)
+
 **Explicación**
+Se tiene la lista de pokemones , luego aplicamos un .map() para sacar el nombre de los pokemones con el getNombre, se aplica un .collect() para meter los pókemones en la lista final 
 
 
 ### E11S2 - Poder Promedio 
@@ -177,9 +182,15 @@ Calcular el promedio de poderCombate de todos los Pokémon del equipo.
 
 **Codigo:**
 
+![alt text](CODIGOE11S2.png)
+
+
 **Captura de ejecución**
 
+![alt text](OUTPUTE11S02.png)
+
 **Explicación**
+
 
 
 ### E12S2 - Campeón Regional
