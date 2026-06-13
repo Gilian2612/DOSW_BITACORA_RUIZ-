@@ -15,7 +15,7 @@ import java.util.List;
  * Ordenar alfabéticamente
  * Obtener cantidad total de palabras resultantes
  */
-public class E2S2 {
+public class E2S1 {
     public static void main(String[] args) {
         List<String> palabras =  Arrays.asList("java", "stream", "api", "functional", "code", "git");
         long cantidad = palabras.stream()

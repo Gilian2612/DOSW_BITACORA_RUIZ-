@@ -43,34 +43,49 @@ Dada una lista de usuarios con los atributos: id, name, age, active
 Filtra únicamente los usuarios activos, obtén una lista con los nombres en mayúscula y ordenada alfabéticamente.
 
 **Codigo:**
+![alt text](CODIGOE3S1.png)
 
 
 **Captura de ejecución**
+![alt text](OUTPUTE3S1.png)
+
 
 **Explicación**
+Teniendo la lista de usuarios, se filtran los activos, después con .map se dejan los nombres en mayúscula 
 
 
 ### E4S1  Personas mayores de edad 
-
+Dado un listado de Usuarios y utilizando los mismo atributos anteriores, filtrar las personas mayores de edad y obtener
+sus nombres.
 
 **Codigo:**
+![alt text](CODIGOE4S1.png)
 
 
 **Captura de ejecución**
+![alt text](OUTPUT_E4S1.png)
 
 **Explicación**
-
+Se tiene lista de users, filtramos los que tengan más de 18 años (o 18 años), se toman los nombres de las personas que cumplan con la condicion, y posteriormente se usa .collect() para meter a todos esos en una lista con sus nombres 
 
 ### E5S1 Transacciones Bancarias
 
 
 
 **Codigo:**
+Clase principal: 
+![alt text](CODIGOE5S1.png)
 
+Clase auxiliar 
+![alt text](CODIGOE5S1_AUXILIAR.png)
 
 **Captura de ejecución**
+![alt text](OUTPUTE5S1.png)
 
 **Explicación**
+Teniendo la lista de transacciones, se hace .peek para ver si están aprovadas o no (una por una) se usa anyMatch para ver si alguna no está aprobada, si eso pasa da True, si ninguna está desaprobada es caso contrario 
+
+Si se tiene 1 o más desaprobadas = lote invalido 
 
 
 
