@@ -5,7 +5,8 @@
 - ID: 1000091727
 - DOSW 
 
-### E1S2 - 
+### E1S2 - Pokémon Tipo Fuego
+Dada una lista de Pokémon con nombre y tipo, obtener únicamente aquellos cuyo tipo sea Fuego.
 **Codigo:**
 ![alt text](CODIGOE1S2.png)
 
@@ -13,20 +14,77 @@
 ![alt text](OUTPUTE1S2.png)
 
 **Explicación**
-### E2S2 -
+
+### E2S2 - Pokédex Gritona 
+Transformar todos los nombres de Pokémon a mayúsculas. 
+
+
+**Codigo:**
+![alt text](CODIGOE2S2.png)
+
+**Captura de ejecución**
+![alt text](OUTPUTE2S2.png)
+
+**Explicación**
+Dada la lista de pokemones, se hace .map() para pasarlos a mayúsculas, luego los recolecta y arma la lista de nombres en mayusculas. 
+
+### E3S2 - Poder total del Equipo 
+Dada una lista de niveles de Pokémon, calcular la suma total de niveles del equipo. 
+
+**Codigo:**
+![alt text](CODIGOE3S2.png)
+
+
+**Captura de ejecución**
+![alt text](OUTPUTE3S2.png)
+
+
+**Explicación**
+Con la lista ya dada de niveles se van sumando, el valor inicial es de 0, se aplica el .reduce para ir sumando los valores constantemente 
+
+### E4S2 - Pokémon Alfa 
+Encontrar el Pokémon con el nivel más alto dentro del equipo. 
+
 **Codigo:**
 **Captura de ejecución**
 **Explicación**
-### E3S2 -
+
+### E5S2 - Pokémon Legendarios 
+Contar cuántos Pokémon del equipo tienen nivel superior a 80.
+
 **Codigo:**
 **Captura de ejecución**
 **Explicación**
-### E4S2 -
+
+### E6S2 - Pokédex Sin Duplicados
+Dada una lista de Pokémon con elementos repetidos, generar una nueva colección donde cada Pokémon 
+aparezca una sola vez. 
+
 **Codigo:**
 **Captura de ejecución**
 **Explicación**
-### E5S2 -
+
+
+### E7S2 - Orden del Profesor Oak
+El Profesor Oak quiere su Pokédex organizada. Ordenar alfabéticamente los nombres de los Pokémon. 
+
 **Codigo:**
 **Captura de ejecución**
 **Explicación**
-### E6S2 -
+
+### E8S2 - Evoluciones Preparadas
+
+
+**Codigo:**
+**Captura de ejecución**
+**Explicación**
+
+### A PARTIR DE ESTE PUNTO SE DEBE CREAR LA CLASE POKEMON 
+
+### E9S2 - Equipo Élite 
+
+**Codigo:**
+**Captura de ejecución**
+**Explicación**
+
+
