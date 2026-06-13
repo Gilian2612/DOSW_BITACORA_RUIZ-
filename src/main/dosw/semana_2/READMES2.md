@@ -7,7 +7,11 @@
 
 ### E1S2 - 
 **Codigo:**
+![alt text](CODIGOE1S2.png)
+
 **Captura de ejecución**
+![alt text](OUTPUTE1S2.png)
+
 **Explicación**
 ### E2S2 -
 **Codigo:**
