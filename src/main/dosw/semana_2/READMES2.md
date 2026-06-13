@@ -190,7 +190,9 @@ Calcular el promedio de poderCombate de todos los Pokémon del equipo.
 ![alt text](OUTPUTE11S02.png)
 
 **Explicación**
+se tiene la listya de pokemones, se quiere buscar solo el poder de combate de los pokemones, entonces se aplica un .map(), como se va a sacar el promedio el valor en este caso no será int sino double. 
 
+se aplica un .average(), y finalmente obtenemos el valor final del promedio de poder de combate 
 
 
 ### E12S2 - Campeón Regional
@@ -198,18 +200,71 @@ Obtener el Pokémon con mayor poderCombate de toda la lista.
 
 **Codigo:**
 
+![alt text](CODIGOE12S2.png)
+
 **Captura de ejecución**
 
+![alt text](OUTPUTE12S2.png)
+
+
 **Explicación**
+
+Se recorren todos los pokemones y se determina el campeon regional como el que mayor poder de combate tenga 
+
 
 ### E13S2 -  Organizar por Tipo
 Agrupar todos los Pokémon por su tipo y mostrar el listado por grupo. 
 
 **Codigo:**
 
+![alt text](CODIGOE13S2.png)
+
+
 **Captura de ejecución**
 
+![alt text](OUTPUTE13S2.png)
+
+
 **Explicación**
+agrupamos los pokemones según su tipo con un groupingBy() ,  y se extrae el nombre de cada pokemon de su gupo con un .map() , output es un Map que refleja el tipo como la key y el value como el nombre del pokemon 
+
+### E14S2 -  Organizar por Región
+Agrupar los Pokémon según su región de origen. 
+
+**Codigo:**
+
+![alt text](CODIGOE14S2.png)
+
+
+**Captura de ejecución**
+
+![alt text](OUTPUTE14S2.png)
+
+**Explicación**
+Se aplica la misma estrategia del anterior pero buscando la region como conjunto comun en vez del tipo 
+
+
+## A partir de ahora se necesita la clase entrenador: 
+
+![alt text](CODIGOENTRENADORCLASS.png)
+
+
+### E15S2 -  Maestro de Gimnasios
+Dado un listado de entrenadores con sus medallas, encontrar el entrenador con más medallas. 
+
+**Codigo:**
+
+![alt text](CODIGOE15S02.png)
+
+**Captura de ejecución**
+
+![alt text](OUTPUTE15S02.png)
+
+**Explicación**
+
+
+
+
 
 
 
