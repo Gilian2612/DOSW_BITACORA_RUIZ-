@@ -263,6 +263,22 @@ Dado un listado de entrenadores con sus medallas, encontrar el entrenador con m�
 **Explicación**
 
 
+### E16S2 - 
+
+**Codigo:**
+
+![alt text](CODIGOE16S2.png)
+
+
+**Captura de ejecución**
+
+![alt text](OUTPUTE16S2.png)
+
+
+
+
+
+
 
 
 
