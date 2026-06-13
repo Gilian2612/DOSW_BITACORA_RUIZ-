@@ -136,12 +136,70 @@ Dada una lista de Pokémon que incluye si pueden evolucionar (boolean puedeEvolu
 
 **Explicación**
 
+
+
 ### A PARTIR DE ESTE PUNTO SE DEBE CREAR LA CLASE POKEMON 
+
+**CODIGO CLASE POKEMON**
+
+![alt text](CODIGOPOKEMONCLASS.png)
 
 ### E9S2 - Equipo Élite 
 
 **Codigo:**
+
+![alt text](CODIGOE9S2.png)
+
 **Captura de ejecución**
+
+![alt text](OUTPUTE9S2.png)
+
+
 **Explicación**
+Se tiene la lista de pokemones, ID es el numero de la pokedex, 
+se aplica .filter() para que pasen solo los que tienen un poder mayor de 500
+.collect() para pasarlos a la lista final, y luego un .forEach() para tener el output que corresponde al nombre de cada uno y sus poderes 
+
+
+
+### E10S2 - Pokédex Compacta
+Generar una lista que contenga únicamente los nombres de todos los Pokémon del equipo.
+
+**Codigo:**
+
+**Captura de ejecución**
+
+**Explicación**
+
+
+### E11S2 - Poder Promedio 
+Calcular el promedio de poderCombate de todos los Pokémon del equipo.
+
+**Codigo:**
+
+**Captura de ejecución**
+
+**Explicación**
+
+
+### E12S2 - Campeón Regional
+Obtener el Pokémon con mayor poderCombate de toda la lista. 
+
+**Codigo:**
+
+**Captura de ejecución**
+
+**Explicación**
+
+### E13S2 -  Organizar por Tipo
+Agrupar todos los Pokémon por su tipo y mostrar el listado por grupo. 
+
+**Codigo:**
+
+**Captura de ejecución**
+
+**Explicación**
+
+
 
 
