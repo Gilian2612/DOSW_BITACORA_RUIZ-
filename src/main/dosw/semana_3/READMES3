@@ -1,0 +1,39 @@
+# SEMANA No 2 - PATRONES DE DISEÑO 
+
+## Datos Personales: 
+- William Santiago Ruiz Medina
+- ID: 1000091727
+- DOSW 
+
+### E1S3 Plataforma de Pagos Inteligentes
+
+Una aplicación de e-commerce permite pagar con tarjeta, PSE, Nequi, PayPal y transferencia bancaria. Cada
+medio tiene una lógica distinta pero el flujo de compra es el mismo. Además, según el país del usuario, el
+sistema construye el proveedor de pago correcto (Colombia → PSE/Nequi, USA → PayPal/Stripe).
+
+### OUTPUT
+
+![alt text](S3_E01.png)
+
+### Explicación del rol de cada patrón 
+
+Strategy: Aplica encapsulamiento permitiendo polimorfismo, ya que por ejemplo checkout solo sabe que debe tener la suma de dinero si importar el método, por otro lado process() se encarga de hacer algo diferente en función de que método de pago se usa, es decir puede cobrar por los diferentes medios de pago disponibles 
+
+Factory Method: Crea el proovedor pago en fucnión de si es COL o USA,, ColombiaPaymentFactory y UsaPaymentFactory tienen conocimiento de sus propios medios de pago locales, cada una de estas Payment 
+
+### INTERACCIÓN:
+Usuario escoge país, luego obtiene la PaymentFactory (Colombia o Usa), se construye con esta una PaymentStrategy por medio de create(), esta strategy se usa en el checkout que llama a strategy.process(amount), pero esto sin tener conocimiento del medio de pago se está usando
+
+
+
+
+
+
+### E2S3 Sistema de Notificaciones Multicanal
+
+Cuando un pedido cambia de estado (pendiente → enviado → entregado), el sistema notifica por correo,
+SMS, WhatsApp y push. No todos los usuarios tienen activos los mismos canales. Cada canal tiene su
+propia forma de construir y formatear el mensaje.
+
+
+### E3S3
