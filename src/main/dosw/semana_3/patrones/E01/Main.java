@@ -5,7 +5,7 @@ public class Main {
 
         Checkout checkout = new Checkout();
 
-        System.out.println("=== Usuario en Colombia ===");
+        System.out.println("USUARIO COL");
         PaymentFactory factory = new ColombiaPaymentFactory();
 
         checkout.setStrategy(factory.create("PSE"));
@@ -13,8 +13,8 @@ public class Main {
 
         checkout.setStrategy(factory.create("NEQUI"));
         checkout.executePayment(75000);
-
-        System.out.println("\n=== Usuario en USA ===");
+        System.out.println("-----------------------------");
+        System.out.println("\nUSUARIO USA");
         factory = new UsaPaymentFactory();
 
         checkout.setStrategy(factory.create("PAYPAL"));
