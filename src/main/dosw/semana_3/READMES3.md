@@ -36,6 +36,11 @@ Cuando un pedido cambia de estado (pendiente → enviado → entregado), el sist
 SMS, WhatsApp y push. No todos los usuarios tienen activos los mismos canales. Cada canal tiene su
 propia forma de construir y formatear el mensaje.
 
+## OUTPUT 
+
+![alt text](imagenes/S3_E02.png)
+
+
 
 ### E3S3 Sistema de reportes Empresariales
 
@@ -56,3 +61,4 @@ propia forma de construir y formatear el mensaje.
 
 ![alt text](imagenes/S3_E03_PARTE2.png)
 
+### E4S3 
