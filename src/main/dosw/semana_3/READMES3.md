@@ -78,4 +78,5 @@ El WarriorBuilder construye el personaje base, durante la partida los Decorators
 
 ## OUTPUT: 
 
+![alt text](imagenes/S3_E04.png)
 
