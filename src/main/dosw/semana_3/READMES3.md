@@ -80,3 +80,21 @@ El WarriorBuilder construye el personaje base, durante la partida los Decorators
 
 ![alt text](imagenes/S3_E04.png)
 
+
+### E5S3 Integracion sistema bancario antiguo 
+
+## Rol de cada patrón 
+
+- Adapter: LegacyBankAdapter implementa PaymentProcessor e internamente traduce las llamadas al formato del banco antiguo. Convierte amount (double) a centavos (int) y llama executeTransaction() en vez de pay(). El sistema moderno nunca toca LegacyBankService directamente.
+
+- Facade: BankFacade expone un método simple procesarPago (monto) que internamente orquesta los 8 pasos de inicialización (conexión, autenticación, sesión, contexto, preparación, ejecución, commit, cierre) y delega al Adapter. Los desarrolladores solo llaman un método.
+
+## Interacción
+
+- PASOS: 
+Se llama BankFacade.procesarPago(monto), luego de esto la Facade inicializa conexión, sesión y contexto, y se delega al LegacyBankAdapter que traduce al formato legacy, LegacyBankService ejecuta
+
+
+## OUTPUT: 
+
+![alt text](imagenes/S3_E05.png)
