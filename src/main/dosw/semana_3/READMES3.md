@@ -136,11 +136,16 @@ Un handler de la cadena procesa el documento, según su resultado invoca documen
 
 ## Rol de cada patrón: 
 
+- Chain: Se encarga de decidir si la persona tiene o no acceso 
+- Strategy: Va a autenticar (o no)
+
 
 ## Interacción
 - PASOS: 
-Usuario intenta acceder, AuthService selecciona la Strategy correcta, autenticación exitosa, el resultado pasa por la cadena de validadores, si todos aprueban se concede acceso. Strategy decide 'cómo autentico', Chain decide 'si tengo acceso'.
+Usuario intenta acceder, AuthService selecciona la Strategy correcta, autenticación exitosa, el resultado pasa por la cadena de validadores, si todos aprueban se concede acceso. 
 
 ## OUTPUT: 
+
+![alt text](imagenes/S3_E09.png)
 
 ### E10S3 Aplicacion de edicion de imagenes 
