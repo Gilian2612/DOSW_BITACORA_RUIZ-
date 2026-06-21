@@ -62,3 +62,20 @@ propia forma de construir y formatear el mensaje.
 ![alt text](imagenes/S3_E03_PARTE2.png)
 
 ### E4S3 
+
+## Rol de cada patrón:
+
+- Builder: WarriorBuilder construye el personaje paso a paso al inicio de la partida. Permite encadenar setArmor().setWeapon().setSkill().build() sin necesitar un constructor con múltiples parámetros. El personaje resultante es inmutable una vez construido.
+
+- Decorator: ShieldDecorator, SpeedDecorator e InvisibilityDecorator envuelven el personaje y agregan poderes temporales en runtime sin modificar la clase base Warrior
+
+
+## Interacción:
+
+
+- PASOS:
+El WarriorBuilder construye el personaje base, durante la partida los Decorators envuelven el personaje agregando poderes temporales, al terminar el efecto el wrapper se descarta y el personaje base queda intacto
+
+## OUTPUT: 
+
+
