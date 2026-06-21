@@ -1,5 +1,4 @@
 # SEMANA No 2 - PATRONES DE DISEÑO 
-
 ## Datos Personales: 
 - William Santiago Ruiz Medina
 - ID: 1000091727
@@ -24,9 +23,6 @@ Factory Method: Crea el proovedor pago en fucnión de si es COL o USA,, Colombia
 
 ### INTERACCIÓN:
 Usuario escoge país, luego obtiene la PaymentFactory (Colombia o Usa), se construye con esta una PaymentStrategy por medio de create(), esta strategy se usa en el checkout que llama a strategy.process(amount), pero esto sin tener conocimiento del medio de pago se está usando
-
-
-
 
 
 
@@ -85,9 +81,9 @@ El WarriorBuilder construye el personaje base, durante la partida los Decorators
 
 ## Rol de cada patrón 
 
-- Adapter: LegacyBankAdapter implementa PaymentProcessor e internamente traduce las llamadas al formato del banco antiguo. Convierte amount (double) a centavos (int) y llama executeTransaction() en vez de pay(). El sistema moderno nunca toca LegacyBankService directamente.
+- Adapter: LegacyBankAdapter implementa PaymentProcessor e internamente traduce las llamadas al formato del banco antiguo. Convierte amount (double) a centavos (int) y llama executeTransaction() en vez de pay(). El sistema moderno nunca toca LegacyBankService directamente
 
-- Facade: BankFacade expone un método simple procesarPago (monto) que internamente orquesta los 8 pasos de inicialización (conexión, autenticación, sesión, contexto, preparación, ejecución, commit, cierre) y delega al Adapter. Los desarrolladores solo llaman un método.
+- Facade: BankFacade expone un método simple procesarPago (monto) que internamente orquesta los 8 pasos de inicialización (conexión, autenticación, sesión, contexto, preparación, ejecución, commit, cierre) y delega al Adapter. Los desarrolladores solo llaman un método
 
 ## Interacción
 
@@ -98,3 +94,42 @@ Se llama BankFacade.procesarPago(monto), luego de esto la Facade inicializa cone
 ## OUTPUT: 
 
 ![alt text](imagenes/S3_E05.png)
+
+### E6S3 Motor de Recomendaciones 
+
+## Rol de cada patrón 
+
+- Strategy: GenreStrategy, HistoryStrategy y PopularityStrategy implementan RecommendationAlgorithm. El motor intercambia el algoritmo de recomendación en un runtime determinado. Cada strategy retorna contenido diferente 
+
+- Observer: HomePageComponent y SuggestedListComponent hacen parte de este patrón
+
+## Interacción
+
+- PASOS: 
+Inicialmente user cambia preferences, el perfil de user (Subject) notifica a sus Observers, cada Observer reactualiza su contenido usando el nuevo algoritmo Strategy que fue configurado, y la UI se actualiza
+
+## OUTPUT: 
+
+![alt text](imagenes/S3_E06.png)
+
+### E7S3 Flujo de Aprobación de documentos 
+
+## Rol de cada Patrón 
+
+- Chain of Responsibility: AutorHandler y LiderHandler encadenan los validadores. Cada handler decide si procesa el documento o lo pasa al siguiente
+
+- State: InReviewState y ApprovedState manejan las transiciones de estado del documento. Cada estado sabe a qué estado puede transicionar y qué operaciones permite
+
+## Interacción
+
+- PASOS: 
+Un handler de la cadena procesa el documento, según su resultado invoca document.approve() o document.reject(), el objeto State actual ejecuta la transición correspondiente, el documento nunca tiene un switch de estados
+
+## OUTPUT: 
+
+![alt text](imagenes/S3_E07.png)
+
+
+### E8S3 Sistema de pedidos en restaurante 
+
+### E9S3 Sistema de Autenticación empresarial
