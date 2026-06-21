@@ -133,3 +133,14 @@ Un handler de la cadena procesa el documento, según su resultado invoca documen
 ### E8S3 Sistema de pedidos en restaurante 
 
 ### E9S3 Sistema de Autenticación empresarial
+
+## Rol de cada patrón: 
+
+
+## Interacción
+- PASOS: 
+Usuario intenta acceder, AuthService selecciona la Strategy correcta, autenticación exitosa, el resultado pasa por la cadena de validadores, si todos aprueban se concede acceso. Strategy decide 'cómo autentico', Chain decide 'si tengo acceso'.
+
+## OUTPUT: 
+
+### E10S3 Aplicacion de edicion de imagenes 
