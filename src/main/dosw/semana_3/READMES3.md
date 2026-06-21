@@ -13,7 +13,8 @@ sistema construye el proveedor de pago correcto (Colombia → PSE/Nequi, USA →
 
 ### OUTPUT
 
-![alt text](S3_E01.png)
+![alt text](imagenes/S3_E01.png)
+
 
 ### Explicación del rol de cada patrón 
 
@@ -36,4 +37,22 @@ SMS, WhatsApp y push. No todos los usuarios tienen activos los mismos canales. C
 propia forma de construir y formatear el mensaje.
 
 
-### E3S3
+### E3S3 Sistema de reportes Empresariales
+
+# Rol de cada patrón: 
+
+-  Template Method Define la estructura fija del algoritmo en ReportGenerator. El método final generate() ejecuta los 4 pasos en orden. Las subclases (PdfReport, ExcelReport, CsvReport) solo sobreescriben los pasos variables: applyFormat() y exportFile().
+
+- Factory: ReportFactory.create("PDF") retorna la instancia correcta sin que el cliente conozca las clases concretas. El cliente nunca instancia PdfReport directamente.
+
+## Interacción: 
+
+- PASOS: 
+ Cliente pide reporte de PDF, ReportFactory.create("PDF") crea el reporte, se llama al report.generate(), luego el patrón Template hace los pasos. 
+
+## OUTPUT
+
+![alt text](imagenes/S3_E03.png)
+
+![alt text](imagenes/S3_E03_PARTE2.png)
+

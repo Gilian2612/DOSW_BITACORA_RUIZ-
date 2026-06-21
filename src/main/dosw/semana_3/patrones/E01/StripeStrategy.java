@@ -1,4 +1,4 @@
-package semana_3.patrones.E01;
+package E01;
 
 public class StripeStrategy implements PaymentStrategy {
     @Override

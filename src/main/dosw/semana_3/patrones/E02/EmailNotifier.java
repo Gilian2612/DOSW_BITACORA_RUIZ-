@@ -1,4 +1,4 @@
-package semana_3.patrones.E02;
+package E02;
 
 public class EmailNotifier implements NotificationObserver {
     private MessageFactory factory = new EmailMessageFactory();

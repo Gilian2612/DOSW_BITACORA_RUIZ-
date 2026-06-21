@@ -1,5 +1,4 @@
-package semana_3.patrones.E02;
-
+package E02;
 public class PushNotifier implements NotificationObserver {
     private MessageFactory factory = new MessageFactory() {
         @Override

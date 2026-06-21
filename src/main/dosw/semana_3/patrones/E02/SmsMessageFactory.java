@@ -1,5 +1,4 @@
-package semana_3.patrones.E02;
-
+package E02;
 public class SmsMessageFactory implements MessageFactory {
     @Override
     public Main.Message build(Main.OrderEvent event) {

@@ -1,4 +1,4 @@
-package semana_3.patrones.E01;
+package E01;
 
 public interface PaymentStrategy {
     void process(double amount);
